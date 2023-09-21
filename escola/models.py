@@ -26,7 +26,7 @@ class Matricula(models.Model):
     PERIODO = (
         ('V', 'Vespertino'),
         ('M', 'Matutino'),
-        ('n', 'Noturno')
+        ('N', 'Noturno')
     )
     aluno = models.ForeignKey(Aluno, on_delete=models.CASCADE)
     curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
